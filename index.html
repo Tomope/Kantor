@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script defer src="js/script.js"></script>
+    <title>Kantor</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="js-form form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Przelicznik walut</legend>
+                <p>
+                    <label>
+                        <span class="form__labelText">Przelicz z:</span>
+                        <select name="inputCurrency" id="" class="js-inputCurrency">
+                            <option value="PLN">PLN</option>
+                            <option value="EUR">EUR</option>
+                            <option value="USD">USD</option>
+                            <option value="JPY">JPY</option>
+                        </select>
+                        <input type="number" name="inputMoney" class="js-inputMoney form__field" value="1">
+                    </label>
+                </p>
+                <hr>
+                <p>
+                    <label>
+                        <span class="form__labelText">Przelicz na:</span>
+                        <select name="outputCurrency" class="js-outputCurrency">
+                            <option value="PLN">PLN</option>
+                            <option value="EUR">EUR</option>
+                            <option value="USD">USD</option>
+                            <option value="JPY">JPY</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <span class="js-result"></span>
+                </p>
+            </fieldset>
+            <button class="form__button">Przelicz</button>
+            <p>
+                Dane z dnia 25.10.2022 godz 16:18
+            </p>
+            
+        </form>
+    </div>
+</body>
+
+</html>
